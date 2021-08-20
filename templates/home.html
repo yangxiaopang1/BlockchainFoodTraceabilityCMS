@@ -1,0 +1,275 @@
+﻿<!DOCTYPE html>
+
+
+ <html lang="en"> 
+
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8">
+<head>
+   <meta charset="utf-8" />
+   <title>管理页面</title>
+   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+   <meta content="" name="description" />
+   <meta content="Mosaddek" name="author" />
+   <link href="{{url_for('static',filename='css/home/bootstrap.min.css')}}" rel="stylesheet" />
+   <link href="{{url_for('static',filename='css/home/bootstrap-responsive.min.css')}}" rel="stylesheet" />
+   <link href="{{url_for('static',filename='css/home/bootstrap-fileupload.css')}}" rel="stylesheet" />
+   <link href="{{url_for('static',filename='css/home/font-awesome.css')}}" rel="stylesheet" />
+   <link href="{{url_for('static',filename='css/home/style.css')}}" rel="stylesheet" />
+   <link href="{{url_for('static',filename='css/home/style-responsive.css')}}" rel="stylesheet" />
+   <link href="{{url_for('static',filename='css/home/style-default.css')}}" rel="stylesheet" id="style_color" />
+   <link href="{{url_for('static',filename='css/home/bootstrap-fullcalendar.css')}}" rel="stylesheet" />
+   <link href="{{url_for('static',filename='css/home/jquery.easy-pie-chart.css')}}" rel="stylesheet" type="text/css" media="screen">
+</head>
+
+
+<body class="fixed-top">
+   
+   <div id="header" class="navbar navbar-inverse navbar-fixed-top">
+       
+       <div class="navbar-inner">
+           <div class="container-fluid">
+               
+               <div class="sidebar-toggle-box hidden-phone">
+                   <div class="icon-reorder tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
+               </div>
+               
+               
+               <a class="brand" href="index.html">
+                   <!-- 添加logo -->
+               </a>
+               
+               
+               <a class="btn btn-navbar collapsed" id="main_menu_trigger" data-toggle="collapse" data-target=".nav-collapse">
+                   <span class="icon-bar"></span>
+                   <span class="icon-bar"></span>
+                   <span class="icon-bar"></span>
+                   <span class="arrow"></span>
+               </a>
+               
+               
+               <div class="top-nav ">
+                   <ul class="nav pull-right top-menu" >
+                       
+                       
+                       <li class="dropdown">
+                           <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                               <span class="username">欢迎：{{username}}</span>
+                               <b class="caret"></b>
+                           </a>
+                           <ul class="dropdown-menu extended logout">
+                               <li><a href="login"><i class="icon-key"></i>退出</a></li>
+                           </ul>
+                       </li>
+                       
+                   </ul>
+                   
+               </div>
+           </div>
+       </div>
+       </div>
+   </div>
+   
+   
+   <div id="container" class="row-fluid">
+      
+      <div class="sidebar-scroll">
+        <div id="sidebar" class="nav-collapse collapse">
+
+         
+
+         
+         
+          <ul class="sidebar-menu">
+              <li class="sub-menu active">
+                  <a class="" href="home">
+                      <i class="icon-dashboard"></i>
+                      <span>控制台</span>
+                  </a>
+              </li>
+              <li class="sub-menu">
+                  <a href="javascript:;" class="">
+                      <i class="icon-tasks"></i>
+                      <span>食品溯源</span>
+                      <span class="arrow"></span>
+                  </a>
+                  <ul class="sub">
+                      <li><a class="" href="traceability">食品溯源查询</a></li>
+                  </ul>
+              </li>
+              <li class="sub-menu">
+                  <a href="javascript:;" class="">
+                      <i class="icon-user"></i>
+                      <span>用户管理</span>
+                      <span class="arrow"></span>
+                  </a>
+                  <ul class="sub">
+                      <li><a class="" href="Permission_Management">权限设置</a></li>
+                      <li><a class="" href="add_user">添加用户</a></li>
+                  </ul>
+              </li>
+              <li class="sub-menu">
+                  <a href="javascript:;" class="">
+                      <i class="icon-file-alt"></i>
+                      <span>货品管理</span>
+                      <span class="arrow"></span>
+                  </a>
+                  <ul class="sub">
+                      <li><a class="" href="add_good">货品创建</a></li>
+                      <li><a class="" href="transfer_good">货品转移</a></li>
+                      <li><a class="" href="now_food">查看当前持有货品</a></li>
+                  </ul>
+              </li>
+
+              <li>
+                  <a class="" href="home">
+                    <i class="icon-circle-arrow-left"></i>
+                    <span>返回控制台</span>
+                  </a>
+              </li>
+          </ul>
+         
+      </div>
+      </div>
+      
+        
+      <div id="main-content">
+         
+         <div class="container-fluid">
+               
+            <div class="row-fluid">
+               <div class="span12">
+
+                   <h3 class="page-title">
+                     控制台
+                   </h3>
+                   <ul class="breadcrumb">
+                       <li>
+                           <a href="#">首页</a>
+                           <span class="divider">/</span>
+                       </li>                      
+                       <li class="active">
+                           控制台
+                       </li>
+                   </ul>
+               </div>
+            </div>
+            
+            
+            <div class="row-fluid">
+                <div class="metro-nav">
+                    <div class="metro-nav-block nav-light-purple">
+                        <a data-original-title="" href="#">
+                            <i class="icon-shopping-cart"></i>
+                            <div class="info">29</div>
+                            <div class="status">新增货品</div>
+                        </a>
+                    </div>
+                    <div class="metro-nav-block nav-light-blue double">
+                        <a data-original-title="" href="#">
+                            <i class="icon-tasks"></i>
+                            <div class="info">40</div>
+                            <div class="status">货品数据</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="metro-nav">
+                    <div class="metro-nav-block nav-block-orange double">
+                        <a data-original-title="" href="Permission_Management">
+                            <i class="icon-user"></i>
+                            <div class="info">15</div>
+                            <div class="status">用户管理</div>
+                        </a>
+                    </div>
+                     <div class="metro-nav-block nav-block-grey">
+                        <a data-original-title="" href="#">
+                            <i class="icon-external-link"></i>
+                            <div class="info">3412</div>
+                            <div class="status">总利润</div>
+                        </a>
+                    </div>
+                </div>
+                
+
+            <div class="row-fluid">
+                <div class="span6">
+                    
+                    <div class="widget ">
+                        <div class="widget-title">
+                            <h4><i class="icon-reorder"></i> 用户分布情况</h4>
+                            <span class="tools">
+                                <a href="javascript:;" class="icon-chevron-down"></a>
+                                <a href="javascript:;" class="icon-remove"></a>
+                            </span>
+                        </div>
+                        <div class="widget-body">
+                            <div class="text-center">
+                                <canvas id="doughnut" height="300" width="400"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="span6">
+                    
+                    <div class="widget green">
+                        <div class="widget-title">
+                            <h4><i class="icon-reorder"> </i> 用户活跃数</h4>
+                            <span class="tools">
+                                <a href="javascript:;" class="icon-chevron-down"></a>
+                                <a href="javascript:;" class="icon-remove"></a>
+                            </span>
+                        </div>
+                        <div class="widget-body">
+                            <div class="text-center">
+                                <canvas id="line" height="300" width="450"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+         </div>
+         
+      </div>
+        
+   </div>
+   
+
+   
+
+   
+   
+   <script src="{{url_for('static',filename='js/home/jquery-1.8.3.min.js')}}"></script>
+   <script src="{{url_for('static',filename='js/home/jquery.nicescroll.js')}}" type="text/javascript"></script>
+   <script type="text/javascript" src="{{url_for('static',filename='js/home/jquery-ui-1.9.2.custom.min.js')}}"></script>
+   <script type="text/javascript" src="{{url_for('static',filename='js/home/jquery.slimscroll.min.js')}}"></script>
+   <script src="{{url_for('static',filename='js/home/fullcalendar.min.js')}}"></script>
+   <script src="{{url_for('static',filename='js/home/bootstrap.min.js')}}"></script>
+
+   
+
+   <script src="{{url_for('static',filename='js/home/jquery.easy-pie-chart.js')}}" type="text/javascript"></script>
+   <script src="{{url_for('static',filename='js/home/jquery.sparkline.js')}}" type="text/javascript"></script>
+   <script src="{{url_for('static',filename='js/home/chart.js')}}"></script>
+   <script src="{{url_for('static',filename='js/home/jquery.scrollto.min.js')}}"></script>
+
+
+   
+   <script src="{{url_for('static',filename='js/home/common-scripts.js')}}"></script>
+
+   
+
+   <script src="{{url_for('static',filename='js/home/easy-pie-chart.js')}}"></script>
+   <script src="{{url_for('static',filename='js/home/sparkline-chart.js')}}"></script>
+   <script src="{{url_for('static',filename='js/home/home-page-calender.js')}}"></script>
+   <script src="{{url_for('static',filename='js/home/home-chartjs.js')}}"></script>
+
+</body>
+
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8">
+</html>

@@ -1,0 +1,980 @@
+﻿<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>食品溯源系统</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="Themesdesign" />
+
+    <link rel="shortcut icon" href="{{url_for('static',filename='images/favicon.ico')}}">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="{{url_for('static',filename='css/bootstrap.min.css')}}" type="text/css">
+
+    <!--Material Icon -->
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/materialdesignicons.min.css')}}" />
+
+    <!-- Pe-icon-7 icon -->
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/pe-icon-7-stroke.css')}}">
+
+    <!-- tinyslider -->
+    <link rel="stylesheet" href="{{url_for('static',filename='css/tiny-slider.css')}}">
+
+    <!-- Custom  Css -->
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/style.css')}}" />
+
+</head>
+
+<body>
+    <!-- START  NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-white fixed-top navbar-custom sticky sticky-light" id="navbar">
+        <div class="container">
+
+            <!-- LOGO -->
+            <a class="navbar-brand logo text-uppercase" href="index-1.html">
+                <img src="{{url_for('static',filename='images/logo-dark.png')}}" class="logo-light" alt="" height="22">
+                <img src="{{url_for('static',filename='images/logo-dark.png')}}" class="logo-dark" alt="" height="22">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="mdi mdi-menu"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ms-auto" id="navbar-navlist">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/login">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/regist">Regist</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/home">Management page</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#client">Client</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+
+
+            </div>
+        </div>
+    </nav>
+    <!-- END NAVBAR -->
+
+    <!-- START HOME -->
+    <section class="home-slider bg-light" id="home">
+        <div class="container-fluid">
+            <div class="row">
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+
+                        <div class="carousel-item active">
+                            <div class="home-center">
+                                <div class="home-desc-center">
+                                    <div class="container">
+                                        <div class="row align-items-center justify-content-center">
+                                            <div class="col-lg-12">
+                                                <div class="home-content text-center">
+                                                    <h1 class="home-title">技术成熟 潜力无限</h1>
+                                                    <p class="home-desc mt-4 f-17">运用区块链+物联网技术，构建多方参与的食品物流运营平台，保证货主、承运人、第三方机构等能高效安全地完成资金流、物流、信息流的传递，全面提升物流供应链的效率，为创造新的商业模式带来无限可能。</p>
+                                                    <div class="mt-4">
+                                                        <a href="#" class="btn btn-primary btn-round me-3 mt-4">Get
+                                                            Started <i class="mdi mdi-arrow-right ms-1"></i></a>
+
+                                                        <a href="#" class="btn btn-info btn-round mt-4">Watch Video
+                                                            <span class="play-shadow ms-1" data-bs-toggle="modal"
+                                                                data-bs-target="#watchvideomodal"><span
+                                                                    class="home-btn"><i
+                                                                        class="mdi mdi-play text-center"></i></span></span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="home-center">
+                                <div class="home-desc-center">
+                                    <div class="container">
+                                        <div class="row align-items-center justify-content-center">
+                                            <div class="col-lg-12">
+                                                <div class="home-content text-center">
+                                                    <h1 class="home-title">BlockChain高效溯源</h1>
+                                                    <p class="home-desc mt-4 f-17">由我们精心打造的食品质量安全溯源管理平台，对于合作客户，无需了解该项目的实现理论基础，只需要简单注册一个账号，即可享受全套的区块链溯源服务，省时省力，便捷高效。</p>
+                                                    <div class="mt-4">
+                                                        <a href="#" class="btn btn-primary btn-round me-3 mt-4">Get
+                                                            Started <i class="mdi mdi-arrow-right ms-1"></i></a>
+
+                                                        <a href="#" class="btn btn-info btn-round mt-4">Watch Video
+                                                            <span class="play-shadow ms-1" data-bs-toggle="modal"
+                                                                data-bs-target="#watchvideomodal"><span
+                                                                    class="home-btn"><i
+                                                                        class="mdi mdi-play text-center"></i></span></span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="home-center">
+                                <div class="home-desc-center">
+                                    <div class="container">
+                                        <div class="row align-items-center justify-content-center">
+                                            <div class="col-lg-12">
+                                                <div class="home-content text-center">
+                                                    <h1 class="home-title">区块链接入平台</h1>
+                                                    <p class="home-desc mt-4 f-17">食品质量安全溯源管理平台是介于行业应用和数据区块链之间的接入平台， 支持多种可商用公链，满足客户的部署需求。</p>
+                                                    <div class="mt-4">
+                                                        <a href="#" class="btn btn-primary btn-round me-3 mt-4">Get
+                                                            Started <i class="mdi mdi-arrow-right ms-1"></i></a>
+
+                                                        <a href="#" class="btn btn-info btn-round mt-4">Watch Video
+                                                            <span class="play-shadow ms-1" data-bs-toggle="modal"
+                                                                data-bs-target="#watchvideomodal"><span
+                                                                    class="home-btn"><i
+                                                                        class="mdi mdi-play text-center"></i></span></span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="home-arrow">
+            <a href="#services"><i class="mdi mdi-arrow-down"> </i></a>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade bd-example-modal-lg" id="watchvideomodal" data-keyboard="false" tabindex="-1"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog modal-lg">
+                <div class="modal-content home-modal">
+                    <div class="modal-header border-0">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <video id="VisaChipCardVideo" class="video-box" controls>
+                        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                        <!--Browser does not support <video> tag -->
+                    </video>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END HOME -->
+
+    <!-- START SERVICES -->
+    <section class="section" id="services">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-7">
+                    <div class="title-box text-center">
+                        <p class="sub-title text-primary f-15 text-uppercase mb-0">Our Advantages</p>
+                        <h3 class="title mt-3">我们的优势</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-5 pt-4">
+                <div class="col-lg-4">
+                    <div class="services-box text-center mt-4">
+                        <div class="services-img mt-4">
+                            <img src="{{url_for('static',filename='images/icon/monitor.png')}}" class="img-fluid" alt="">
+                        </div>
+                        <h5 class="mt-4">技术领先</h5>
+                        <p class="text-muted mt-3">支持多链链接、性能稳定，安全可靠，且数据一旦存储永不可逆。</p>
+                        <div class="mt-4">
+                            <a href="" class="read-more text-primary f-15">Read More <i
+                                    class="mdi mdi-chevron-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="services-box active text-center mt-4">
+                        <div class="services-img mt-4">
+                            <img src="{{url_for('static',filename='images/icon/layers.png')}}" class="img-fluid" alt="">
+                        </div>
+                        <h5 class="mt-4">服务多样</h5>
+                        <p class="text-muted mt-3">提供个人用户，企业用户等多类服务，满足不同需求的客户</p>
+                        <div class="mt-4">
+                            <a href="" class="read-more text-primary f-15">Read More <i
+                                    class="mdi mdi-chevron-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="services-box text-center mt-4">
+                        <div class="services-img mt-4">
+                            <img src="{{url_for('static',filename='images/icon/headphones.png')}}" class="img-fluid" alt="">
+                        </div>
+                        <h5 class="mt-4">经验丰富</h5>
+                        <p class="text-muted mt-3">拥有24小时在线的服务团队，在线解疑，可通过微信QQ等多种渠道与我们沟通联系</p>
+                        <div class="mt-4">
+                            <a href="" class="read-more text-primary f-15">Read More <i
+                                    class="mdi mdi-chevron-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <!-- END SERVICES -->
+
+    <!-- START FEATURES -->
+    <section class="section-sm bg-light" id="features">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <div class="col-lg-5">
+                    <div class="mt-4 p-4">
+                        <img src="{{url_for('static',filename='images/features/img-1.png')}}" class="img-fluid box-shadow" alt="">
+                    </div>
+                </div>
+
+                <div class="col-lg-6 offset-lg-1">
+                    <div class="mt-4">
+                        <h2>We Help You To Get best Business Solution Ever</h2>
+
+
+
+                        <div class="mt-4 pt-3 w-75">
+                            <div class="d-flex">
+
+                                <div class="features-img me-4">
+                                    <img src="{{url_for('static',filename='images/icon/pen.png')}}" class="img-fluid" alt="">
+                                </div>
+
+                                <div class="flex-1">
+
+                                    <h5>UI & UX Design</h5>
+                                    <p class="text-muted mt-2">A small river named Duden
+                                        flows by their place and supplies it regelialia.</p>
+
+                                </div>
+
+
+                            </div>
+
+                            <div class="d-flex mt-4">
+
+                                <div class="features-img me-4">
+                                    <img src="{{url_for('static',filename='images/icon/physics.png')}}" class="img-fluid" alt="">
+                                </div>
+
+                                <div class="flex-1">
+
+                                    <h5>React & Vua Js</h5>
+                                    <p class="text-muted mt-2">Separated they live in Bookmarksgrove right at the coast
+                                        of the
+                                        ocean.</p>
+
+                                </div>
+
+
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="row align-items-center mt-4">
+
+
+
+                <div class="col-lg-6">
+                    <div class="mt-4">
+                        <h2>Creative Solution to expand your business!</h2>
+
+                        <p class="text-muted mt-4">Separated they live in Bookmarksgrove right at the coast of the
+                            Semantics, a large language ocean. A small regelialia.</p>
+
+                        <div class="mt-4">
+                            <p class="mb-2"><i class="mdi mdi-circle-medium text-primary me-2"></i>We put a lot of
+                                effort in design.</p>
+                            <p class="mb-2"><i class="mdi mdi-circle-medium text-primary me-2"></i>Sed ut perspiciatis
+                                unde omnis iste natus error sit.</p>
+                            <p class="mb-2"><i class="mdi mdi-circle-medium text-primary me-2"></i>Submit Your
+                                Orgnization.</p>
+                        </div>
+
+                        <div class="mt-4">
+                            <a href="" class="btn btn-primary btn-round"> Learn More <i
+                                    class="mdi mdi-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-5 offset-lg-1">
+                    <div class="mt-4 p-4">
+                        <img src="{{url_for('static',filename='images/features/img-2.png')}}" class="img-fluid box-shadow" alt="">
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </section>
+    <!-- END FEATURES -->
+
+    <!-- START PRICING -->
+    <section class="section" id="pricing">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-7">
+                    <div class="title-box text-center">
+                        <p class="sub-title text-primary f-15 text-uppercase mb-0">Flexible Plans</p>
+                        <h3 class="title mt-3">Best Pricing Package Start
+                            Business</h3>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row mt-5 pt-4">
+                <div class="col-lg-12">
+                    <div class="text-center">
+                        <ul class="nav nav-pills rounded justify-content-center d-inline-block pricing-tab-border py-1 px-2"
+                            id="pills-tab" role="tablist">
+                            <li class="nav-item d-inline-block">
+                                <a class="nav-link px-3 rounded active monthly" id="Monthly" data-bs-toggle="pill"
+                                    href="#Month" role="tab" aria-controls="Month" aria-selected="true">Monthly</a>
+                            </li>
+                            <li class="nav-item d-inline-block">
+                                <a class="nav-link px-3 rounded yearly" id="Yearly" data-bs-toggle="pill" href="#Year"
+                                    role="tab" aria-controls="Year" aria-selected="false">
+                                    Yearly <span class="badge bg-info rounded text-white fw-normal">20% Off </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-content pt-3" id="pills-tabContent">
+                        <div class="tab-pane fade active show" id="Month" role="tabpanel" aria-labelledby="Monthly">
+
+
+                            <div class="row mt-4">
+                                <div class="col-lg-4">
+                                    <div class="pricing-box text-center mt-4">
+                                        <div class="pricing-img text-center">
+                                            <img src="{{url_for('static',filename='images/icon/shield.png')}}" class="img-fluid" alt="">
+                                        </div>
+
+                                        <h5 class="text-uppercase mt-4 pt-1">Economy</h5>
+
+                                        <h1 class="mt-3 mb-0">$7.99<span class="text-muted f-14">/ Month</span> </h1>
+
+
+                                        <p class="text-muted mt-4">For small teams trying out Levonic for an unlimited
+                                            period of time
+                                        </p>
+
+                                        <div class="mt-4 pt-3">
+                                            <a href="" class="btn btn-outline-primary btn-round">Get Started</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4">
+                                    <div class="pricing-box active text-center mt-4">
+                                        <div class="pricing-badge">
+                                            <span class="badge">Featured</span>
+                                        </div>
+                                        <div class="pricing-img text-center">
+                                            <img src="{{url_for('static',filename='images/icon/diamond.png')}}" class="img-fluid" alt="">
+                                        </div>
+
+                                        <h5 class="text-uppercase mt-4 pt-1">Deluxe</h5>
+
+                                        <h1 class="mt-3 mb-0">$29.99<span class="text-muted f-14">/ Month</span> </h1>
+
+                                        <p class="text-muted mt-4">For larger businesses or those with onal
+                                            administration needs</p>
+
+                                        <div class="mt-4 pt-3">
+                                            <a href="" class="btn btn-primary btn-round">Get Started</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4">
+                                    <div class="pricing-box text-center mt-4">
+                                        <div class="pricing-img text-center">
+                                            <img src="{{url_for('static',filename='images/icon/physics.png')}}" class="img-fluid" alt="">
+                                        </div>
+
+                                        <h5 class="text-uppercase mt-4 pt-1">Ultimate</h5>
+
+                                        <h1 class="mt-3 mb-0">$49.99<span class="text-muted f-14">/ Month</span> </h1>
+
+                                        <p class="text-muted mt-4">For extra large businesses or those in regulated
+                                            industries</p>
+
+                                        <div class="mt-4 pt-3">
+                                            <a href="" class="btn btn-outline-primary btn-round">Get Started</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+                        <div class="tab-pane fade" id="Year" role="tabpanel" aria-labelledby="Yearly">
+
+
+                            <div class="row mt-4">
+                                <div class="col-lg-4">
+                                    <div class="pricing-box text-center mt-4">
+                                        <div class="pricing-img text-center">
+                                            <img src="{{url_for('static',filename='images/icon/shield.png')}}" class="img-fluid" alt="">
+                                        </div>
+
+                                        <h5 class="text-uppercase mt-4 pt-1">Economy</h5>
+
+                                        <h1 class="mt-3 mb-0">$9.99<span class="text-muted f-14">/ Years</span> </h1>
+
+
+                                        <p class="text-muted mt-4">For small teams trying out Levonic for an unlimited
+                                            period of time
+                                        </p>
+
+                                        <div class="mt-4 pt-3">
+                                            <a href="" class="btn btn-outline-primary btn-round">Get Started</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4">
+                                    <div class="pricing-box active text-center mt-4">
+                                        <div class="pricing-badge">
+                                            <span class="badge">Featured</span>
+                                        </div>
+                                        <div class="pricing-img text-center">
+                                            <img src="{{url_for('static',filename='images/icon/diamond.png')}}" class="img-fluid" alt="">
+                                        </div>
+
+                                        <h5 class="text-uppercase mt-4 pt-1">Deluxe</h5>
+
+                                        <h1 class="mt-3 mb-0">$79.99<span class="text-muted f-14">/ Years</span> </h1>
+
+                                        <p class="text-muted mt-4">For larger businesses or those with onal
+                                            administration needs</p>
+
+                                        <div class="mt-4 pt-3">
+                                            <a href="" class="btn btn-primary btn-round">Get Started</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4">
+                                    <div class="pricing-box text-center mt-4">
+                                        <div class="pricing-img text-center">
+                                            <img src="{{url_for('static',filename='images/icon/physics.png')}}" class="img-fluid" alt="">
+                                        </div>
+
+                                        <h5 class="text-uppercase mt-4 pt-1">Ultimate</h5>
+
+                                        <h1 class="mt-3 mb-0">99.99<span class="text-muted f-14">/ Years</span> </h1>
+
+                                        <p class="text-muted mt-4">For extra large businesses or those in regulated
+                                            industries</p>
+
+                                        <div class="mt-4 pt-3">
+                                            <a href="" class="btn btn-outline-primary btn-round">Get Started</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- END PRICING -->
+
+    <!-- START COUNTER -->
+    <section class="section bg-counter">
+        <div class="color-overlay"></div>
+        <div class="container">
+
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="text-center text-white">
+                        <h3>We are trusted by 580+ big & small business Levonic</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-5 pt-4">
+
+                <div class="col-lg-4">
+                    <div class="counter-box text-center mt-4 mt-lg-0">
+
+                        <div class="counter-img">
+                            <img src="{{url_for('static',filename='images/icon/presentation.png')}}" class="img-fluid" alt="">
+                        </div>
+
+                        <h1 class="text-white mt-4">
+                            <span class="counter_value mt-3" data-target="2080">0</span>
+                            <span>+</span>
+                        </h1>
+                        <p class="text-white mb-0 mt-2 text-uppercase">Project Complete</p>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="counter-box text-center mt-4 mt-lg-0">
+
+                        <div class="counter-img">
+                            <img src="{{url_for('static',filename='images/icon/briefcase.png')}}" class="img-fluid" alt="">
+                        </div>
+
+
+                        <h1 class="text-white mt-4">
+                            <span class="counter_value mt-3" data-target="4500">0</span>
+                            <span>+</span>
+                        </h1>
+
+
+                        <p class="text-white mb-0 mt-2 text-uppercase">Project Running</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="counter-box text-center mt-4 mt-lg-0">
+
+
+                        <div class="counter-img">
+                            <img src="{{url_for('static',filename='images/icon/calendar.png')}}" class="img-fluid" alt="">
+                        </div>
+
+                        <h1 class="text-white mt-4">
+                            <span class="counter_value mt-3" data-target="500">0</span>
+                            <span>+</span>
+                        </h1>
+
+
+                        <p class="text-white mb-0 mt-2 text-uppercase">Years of expe</p>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </section>
+    <!-- END COUNTER -->
+
+    <!-- START CLIENT -->
+    <section class="section" id="client">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-7">
+                    <div class="title-box text-center">
+                        <p class="sub-title text-primary f-15 text-uppercase mb-0">Client Review</p>
+                        <h3 class="title mt-3">What they say about us
+                            honest reviews</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-5 pt-4">
+                <div class="col-lg-12">
+                    <div class="client-slider pb-5">
+
+
+                        <div>
+                            <div class="testi-box mt-4">
+
+                                <div class="d-flex">
+<!--                                     <div class="testi-img me-4">
+                                        <img src="images/users/img-1.jpg" class="img-fluid" alt="">
+                                    </div> -->
+
+                                    <div class="flex-1">
+
+                                        <div class="testi-icon float-end">
+                                            <i class="mdi mdi-format-quote-open text-primary"></i>
+                                        </div>
+                                        <h5 class="mb-0">Brandon Carney</h5>
+                                        <p class="text-muted mb-0">- Designer</p>
+
+                                        <p class="text-muted mb-0 mt-3 fst-italic f-17">“I feel confident imposing
+                                            change on myself. It's a lot more fun
+                                            progressing than looking back. That's why
+                                            scelerisque need throw curve
+                                            balls.”
+                                        </p>
+
+                                        <div class="client-sign mt-4">
+
+                                            <p class="display-4 mb-0">Carney</p>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div>
+                            <div class="testi-box mt-4">
+
+                                <div class="d-flex">
+<!--                                     <div class="testi-img me-4">
+                                        <img src="images/users/img-2.jpg" class="img-fluid" alt="">
+                                    </div> -->
+
+                                    <div class="flex-1">
+
+                                        <div class="testi-icon float-end">
+                                            <i class="mdi mdi-format-quote-open text-primary"></i>
+                                        </div>
+                                        <h5 class="mb-0">Jeremiah Eskew</h5>
+                                        <p class="text-muted mb-0">- Devloper</p>
+
+                                        <p class="text-muted mb-0 mt-3 fst-italic f-17">“Our task must be to free
+                                            ourselves by widening our circle of
+                                            compassion to embrace living creates and the whole of nature and its
+                                            beauty.”
+                                        </p>
+
+                                        <div class="client-sign mt-4">
+
+                                            <p class="display-4 mb-0">Eskew</p>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div>
+                            <div class="testi-box mt-4">
+
+                                <div class="d-flex">
+<!--                                     <div class="testi-img me-4">
+                                        <img src="images/users/img-3.jpg" class="img-fluid" alt="">
+                                    </div> -->
+
+                                    <div class="flex-1">
+
+                                        <div class="testi-icon float-end">
+                                            <i class="mdi mdi-format-quote-open text-primary"></i>
+                                        </div>
+                                        <h5 class="mb-0">William Alderman</h5>
+                                        <p class="text-muted mb-0">- Manager</p>
+
+                                        <p class="text-muted mb-0 mt-3 fst-italic f-17">“I've learned that people will
+                                            forget what you said, people
+                                            will forget what you did, but people will never forget how you made them
+                                            feel.”
+                                        </p>
+
+                                        <div class="client-sign mt-4">
+
+                                            <p class="display-4 mb-0">Alderman</p>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div>
+                            <div class="testi-box mt-4">
+                                <div class="d-flex">
+<!--                                     <div class="testi-img me-4">
+                                        <img src="images/users/img-4.jpg" class="img-fluid" alt="">
+                                    </div> -->
+
+                                    <div class="flex-1">
+
+                                        <div class="testi-icon float-end">
+                                            <i class="mdi mdi-format-quote-open text-primary"></i>
+                                        </div>
+                                        <h5 class="mb-0">Brandon Carney</h5>
+                                        <p class="text-muted mb-0">- Designer</p>
+
+                                        <p class="text-muted mb-0 mt-3 fst-italic f-17">“I feel confident imposing
+                                            change on myself. It's a lot more fun
+                                            progressing than looking back. That's why
+                                            scelerisque need throw curve
+                                            balls.”
+                                        </p>
+
+                                        <div class="client-sign mt-4">
+
+                                            <p class="display-4 mb-0">Carney</p>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+<!-- 
+            <div class="row mt-4">
+                <div class="col-lg-3">
+                    <div class="client-images mt-4">
+                        <img src="images/clients/img-1.png" alt="logo-img" class="mx-auto img-fluid d-block">
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="client-images mt-4">
+                        <img src="images/clients/img-2.png" alt="logo-img" class="mx-auto img-fluid d-block">
+                    </div>
+                </div>
+                <div class="col-lg-3 ">
+                    <div class="client-images mt-4">
+                        <img src="images/clients/img-3.png" alt="logo-img" class="mx-auto img-fluid d-block">
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="client-images mt-4">
+                        <img src="images/clients/img-4.png" alt="logo-img" class="mx-auto img-fluid d-block">
+                    </div>
+                </div>
+
+            </div>
+        </div> -->
+    </section>
+    <!-- END CLIENT -->
+
+    <!-- START CTA -->
+    <section class="section bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="title-box text-center">
+                        <h3>Join millions of users and grow
+                            business</h3>
+                        <p class="text-muted mt-4">Quisque iaculis urna eu magna semper quis ultrices lectus efficitur
+                            Praesent convallis
+                            velit urna, vitae tristique going through the cites of the word feugiat convallis.</p>
+                        <div class="mt-4 pt-3">
+                            <a href="" class="btn btn-primary btn-round btn-rounded">Get Started Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END CTA -->
+
+    <!-- START CONTACT -->
+    <section class="section" id="contact">
+        <div class="container">
+
+            <div class="row justify-content-center">
+                <div class="col-lg-7">
+                    <div class="title-box text-center">
+                        <p class="sub-title text-primary f-15 text-uppercase mb-0">Contact US</p>
+                        <h3 class="title mt-3">Let's talk about everything!</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-5 pt-4">
+                <div class="col-lg-4">
+
+                    <div class="d-flex mt-4">
+                        <div class="contact-img me-3">
+                            <img src="{{url_for('static',filename='images/icon/call.png')}}" class="img-fluid" alt="">
+                        </div>
+                        <div class="flex-1">
+                            <p class="text-muted mb-0"> (098) 407-854-0933</p>
+                            <p class="text-muted mb-0"> (098) 708-263-8587</p>
+
+
+                        </div>
+                    </div>
+
+                    <div class="d-flex mt-4">
+                        <div class="contact-img me-3">
+                            <img src="{{url_for('static',filename='images/icon/postal.png')}}" class="img-fluid" alt="">
+                        </div>
+                        <div class="flex-1">
+                            <p class="text-muted mb-0"> LeeMMehta@rhyta.com</p>
+                            <p class="text-muted mb-0"> JamesMCalderon@rhyta.com</p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex mt-4">
+                        <div class="contact-img me-3">
+                            <img src="{{url_for('static',filename='images/icon/placeholder.png')}}" class="img-fluid" alt="">
+                        </div>
+                        <div class="flex-1">
+                            <p class="text-muted mb-0"> 2189 Whispering Pineass Hiney Road Circle
+                                Allen, TX 75002</p>
+                        </div>
+                    </div>
+
+
+                    <div class="contact-social mt-4 pt-2">
+                        <ul class="list-inline mb-0">
+                            <li class="list-inline-item">
+                                <a href="" class="text-reset"><i class="mdi mdi-facebook"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="" class="text-reset"><i class="mdi mdi-twitter"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="" class="text-reset"><i class="mdi mdi-google"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="" class="text-reset"><i class="mdi mdi-pinterest"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-8">
+
+                    <div class="custom-form mt-4">
+                        <form method="post" name="myForm" onsubmit="return validateForm()">
+                            <p id="error-msg"></p>
+                            <div id="simple-msg"></div>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="form-group mt-2">
+                                        <input name="name" id="name" type="text" class="form-control"
+                                            placeholder="Your name">
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="form-group mt-2">
+                                        <input name="email" id="email" type="email" class="form-control"
+                                            placeholder="Your email">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="form-group mt-2">
+                                        <textarea name="comments" id="comments" rows="4" class="form-control"
+                                            placeholder="Your message..."></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-2">
+                                <div class="col-lg-12">
+                                    <input type="submit" id="submit" name="send"
+                                        class="submitBnt btn btn-rounded btn-primary" value="Send Message">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
+
+
+
+        </div>
+    </section>
+    <!-- END CONTACT -->
+
+    <!-- START FOOTER -->
+<!--     <section class="bg-footer bg-light">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-6">
+                    <div class="text-sm-start mt-3 mt-sm-0">
+                        <img src="images/logo-dark.png" alt="" height="25" />
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="text-sm-end mt-3 mt-sm-0">
+                        <p class="text-muted mb-0">2021 © Levonic. Design By <a href="http://www.bootstrapmb.com/">bootstrapmb</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- END FOOTER -->
+
+    <!-- bootstrap -->
+    <script src="{{url_for('static',filename='js/bootstrap.bundle.min.js')}}"></script>
+    <!-- JAVASCRIPTS -->
+    <script src="{{url_for('static',filename='js/smooth-scroll.polyfills.min.js')}}"></script>
+    <script src="{{url_for('static',filename='js/gumshoe.polyfills.min.js')}}"></script>
+    <script src="{{url_for('static',filename='js/tiny-slider.js')}}"></script>
+    <!-- CUSTOM JS -->
+    <script src="{{url_for('static',filename='js/app.js')}}"></script>
+</body>
+
+</html>
