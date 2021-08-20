@@ -1,0 +1,122 @@
+//
+// menu.scss
+//
+
+.navbar-custom {
+  background-color: transparent;
+  padding: 20px 0px;
+  width: 100%;
+  border-radius: 0px;
+  z-index: 999;
+  margin-bottom: 0px;
+  transition: all 0.5s ease-in-out;
+  .navbar-nav {
+    li {
+      a {
+        color: rgba($white, 0.6) !important;
+        font-size: 15px;
+        background-color: transparent !important;
+        margin: 0 10px;
+        letter-spacing: 0.03em;
+        line-height: 24px;
+        font-weight: 500;
+        transition: all 0.5s;
+      }
+    }
+  }
+}
+
+.navbar-toggler {
+  font-size: 24px;
+  margin-top: 5px;
+  margin-bottom: 0px;
+  color: $dark;
+}
+
+.navbar-custom.nav-sticky .custom-menu {
+  box-shadow: none;
+}
+
+.logo .logo-light {
+  display: inline-block;
+}
+
+.logo .logo-dark {
+  display: none;
+}
+
+.nav-sticky .logo .logo-dark {
+  display: inline-block;
+}
+
+.nav-sticky .logo .logo-light {
+  display: none;
+}
+
+.nav-button {
+  margin-left: 20px;
+}
+
+.navbar-custom .navbar-nav li.active a,
+.navbar-custom .navbar-nav li a:hover,
+.navbar-custom .navbar-nav li a:focus,
+.navbar-custom .navbar-nav li a:active {
+  color: $white !important;
+}
+
+/*---Navbar-White--*/
+.navbar-custom.navbar-white .navbar-nav li a,
+.navbar-custom.navbar-white .navbar-brand,
+.navbar-white .navbar-toggle {
+  color: $dark !important;
+}
+
+.navbar-custom.navbar-white .navbar-nav li.active a,
+.navbar-custom.navbar-white .navbar-nav li a:hover,
+.navbar-custom.navbar-white .navbar-nav li a:focus,
+.navbar-custom.navbar-white .navbar-nav li a:active {
+  color: $primary !important;
+}
+
+/*---NAVBAR STICKY--*/
+
+.nav-sticky {
+  &.navbar-custom {
+    margin-top: 0px;
+    padding: 18px 0px;
+    background-color: $white;
+    box-shadow: 0px 3px 10px 0px rgba(38, 107, 193, 0.08);
+
+    &.sticky-dark {
+      background-color: $white;
+    }
+  }
+  .logo {
+    color: $dark !important;
+  }
+
+  .navbar-nav {
+    li {
+      a {
+        color: $dark !important;
+      }
+    }
+  }
+}
+
+.nav-sticky.navbar-custom .navbar-nav li.active a,
+.nav-sticky.navbar-custom .navbar-nav li a:hover,
+.nav-sticky.navbar-custom .navbar-nav li a:focus,
+.nav-sticky.navbar-custom .navbar-nav li a:active {
+  color: $primary !important;
+}
+
+.nav-sticky.navbar-custom .navbar-toggles {
+  padding: 0.25rem 0.75rem;
+  border: 1px solid transparent;
+  outline: 0;
+}
+
+.nav-sticky .navbar-nav {
+  margin-top: 0px;
+}

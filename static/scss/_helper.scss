@@ -1,0 +1,171 @@
+//
+// helper.scss
+//
+
+.section-sm {
+  padding-bottom: 60px;
+  padding-top: 60px;
+  position: relative;
+}
+
+.section {
+  padding-bottom: 100px;
+  padding-top: 100px;
+  position: relative;
+}
+
+.section-lg {
+  padding-bottom: 110px;
+  padding-top: 110px;
+  position: relative;
+}
+
+.bg-lightan {
+  background: linear-gradient(to top, rgba($primary, 0.1) 30%, $white 100%);
+}
+
+.home-center {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
+.home-desc-center {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+// overlay
+
+.bg-overlay {
+  background-color: rgba(36, 42, 53, 0.8);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+}
+
+.color-overlay {
+  background-color: $primary;
+  opacity: 0.9;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+}
+
+.overlay-gradient {
+  background: $bg-gradient;
+  opacity: 0.9;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.box-shadow {
+  box-shadow: $box-shadow;
+}
+
+.btn-round {
+  border-radius: 30px;
+}
+
+.row > * {
+  position: relative;
+}
+
+hr {
+  border: 1px solid #e2e2e2;
+}
+
+// font-size
+
+.f-10 {
+  font-size: 10px;
+}
+
+.f-12 {
+  font-size: 12px;
+}
+
+.f-13 {
+  font-size: 13px;
+}
+
+.f-14 {
+  font-size: 14px;
+}
+
+.f-15 {
+  font-size: 15px;
+}
+
+.f-16 {
+  font-size: 16px;
+}
+
+.f-17 {
+  font-size: 17px;
+}
+
+.f-18 {
+  font-size: 18px;
+}
+
+.f-19 {
+  font-size: 19px;
+}
+
+.f-20 {
+  font-size: 20px;
+}
+
+// linehight
+
+.line-height_1_4 {
+  line-height: 1.4;
+}
+
+.line-height_1_6 {
+  line-height: 1.6;
+}
+
+.line-height_1_8 {
+  line-height: 1.8;
+}
+
+// HEADING TITLE
+
+.title-box {
+  .sub-title {
+    position: relative;
+    display: inline-block;
+    padding: 0px 10px;
+    letter-spacing: 0.5px;
+    &:before {
+      position: absolute;
+      content: "";
+      width: 52px;
+      height: 52px;
+      display: inline-block;
+      background: rgba($primary, 0.05);
+      border-radius: 50% 0% 50% 50%;
+      top: -10px;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+    }
+  }
+  .title {
+    max-width: 450px;
+    margin: 0 auto;
+  }
+}

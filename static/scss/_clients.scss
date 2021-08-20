@@ -1,0 +1,43 @@
+//
+// clients.scss
+//
+
+.testi-box {
+  padding: 20px 30px;
+  box-shadow: $box-shadow-sm;
+  border-radius: 10px;
+  .testi-img {
+    img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+    }
+  }
+
+  .testi-icon {
+    i {
+      font-size: 70px;
+      position: relative;
+      top: 12px;
+    }
+  }
+}
+
+// client img
+
+.client-images {
+  img {
+    height: 40px;
+    opacity: 0.3;
+    transition: all 0.5s;
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}
+
+.client-sign {
+  p {
+    font-family: $font-family-secondary;
+  }
+}

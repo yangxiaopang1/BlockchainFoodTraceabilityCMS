@@ -1,0 +1,21 @@
+//
+// Counter.scss
+//
+
+.bg-counter {
+  background-image: url(../images/img-1.jpg);
+  background-position: center;
+}
+
+.counter-img {
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  display: inline-block;
+  background: rgba($white, 0.2);
+  border-radius: 50% 0% 50% 50%;
+  text-align: center;
+  img {
+    width: 30px;
+  }
+}

@@ -1,0 +1,116 @@
+//
+// pricing.scss
+//
+
+.pricing-box {
+  border-radius: 10px;
+  padding: 40px 30px;
+  border: 1px solid $gray-200;
+  position: relative;
+  transition: all 0.5s ease-in-out;
+  &:hover {
+    border: 1px solid transparent;
+    box-shadow: $box-shadow;
+  }
+
+  .pricing-img {
+    img {
+      width: 50px;
+    }
+  }
+
+  .pricing-badge {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    right: 0;
+    width: 100%;
+    display: block;
+    font-size: 15px;
+    padding: 0;
+    overflow: hidden;
+    height: 100px;
+    .badge {
+      float: right;
+      transform: rotate(45deg);
+      right: -67px;
+      top: 17px;
+      position: relative;
+      text-align: center;
+      width: 200px;
+      font-size: 13px;
+      margin: 0;
+      padding: 7px 10px;
+      font-weight: 500;
+      color: $white;
+      background: $primary;
+    }
+  }
+}
+
+.pricing-box.active {
+  border: 1px solid transparent;
+  box-shadow: $box-shadow;
+}
+
+.nav-tabs,
+.nav-pills {
+  > li {
+    > a {
+      color: $dark;
+    }
+  }
+}
+
+.nav-pills {
+  > a {
+    color: $dark;
+  }
+}
+
+.pricing-tab-border {
+  border: 1px solid $gray-200;
+}
+
+.nav-link.active,
+.show > .nav-link {
+  background-color: $primary !important;
+}
+
+.nav-pills {
+  .nav-link {
+    padding: 5px 20px;
+    font-size: 15px;
+  }
+}
+
+.nav-tabs-custom {
+  border-bottom: 2px solid $gray-400;
+
+  .nav-item {
+    position: relative;
+    color: $dark;
+    .nav-link {
+      border: none;
+
+      &::after {
+        content: "";
+        background: $primary;
+        height: 2px;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        bottom: -1px;
+        transition: all 250ms ease 0s;
+        transform: scale(0);
+      }
+
+      &.active {
+        color: $primary;
+        &:after {
+          transform: scale(1);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+/* Template Name: Levonic
+   Author: Themesdesign
+   Version: 1.0.0
+   Created: Jan 2021
+   File Description: Main Css file of the template
+*/
+
+/****************************************\
+
+01.general
+02.helper
+03.components
+04.about
+05.home
+06.services
+07.features
+08.pricing
+09.counter
+10.clients
+11.contact
+12.footer
+13.responsive
+
+*****************************************/
+
+
+@import "variables";
+@import "general";
+@import "helper";
+@import "components";
+@import "menu";
+@import "home";
+@import "services";
+@import "features";
+@import "pricing";
+@import "counter";
+@import "clients";
+@import "contact";
+@import "footer";
+@import "responsive";

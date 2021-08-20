@@ -1,0 +1,73 @@
+//
+// responsive.scss
+//
+
+@media (min-width: 200px) and (max-width: 1024px) {
+  .navbar-custom {
+    margin-top: 0px;
+    padding: 10px 0px !important;
+    box-shadow: $box-shadow;
+    color: $white !important;
+    background: $white;
+    .navbar-nav {
+      margin-left: 0px;
+      li {
+        &.active {
+          border-color: transparent;
+        }
+        a {
+          transition: all 0.4s;
+          margin: 6px;
+          color: $dark !important;
+          padding: 6px 0;
+        }
+      }
+    }
+    > .container {
+      width: 90%;
+    }
+  }
+
+  .home-title {
+    font-size: 36px;
+  }
+
+  // navbar-white
+  .navbar-white {
+    .navbar-toggler {
+      color: $dark !important;
+    }
+  }
+
+  .navbar-custom .navbar-nav li.active a,
+  .navbar-custom .navbar-nav li a:hover,
+  .navbar-custom .navbar-nav li a:active {
+    color: $primary !important;
+  }
+
+  .navbar-toggler {
+    font-size: 24px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    &:focus {
+      box-shadow: none;
+    }
+  }
+
+  .carousel-indicators {
+    right: 0;
+  }
+
+  .logo .logo-light {
+    display: none;
+  }
+  .logo .logo-dark {
+    display: inline-block;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px !important;
+  }
+}
